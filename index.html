@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisconsin Cheese Festival Registration</title>
+  </head>
+
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <main id="main">
+      <h1>Wisconsin Cheese Festival</h1>
+      <p>Celebrate Wisconsin's finest cheese!</p>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="registration.html">Registration</a></li>
+        </ul>
+      </nav>
+
+      <h2>Festival Registration Form</h2>
+
+      <p>Please complete the form below to register for the festival</p>
+
+      <form action="#" method="post">
+        <h3>Personal Information</h3>
+
+        <p>
+          <label for="fullname">Full Name:</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter your full name"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="123-456-7890"
+            required
+          />
+        </p>
+
+        <fieldset>
+          <legend>Wich day will you attend?</legend>
+
+          <p>
+            <input
+              type="radio"
+              id="friday"
+              name="attendance"
+              value="Friday"
+              required
+            />
+            <label for="friday">Friday</label>
+          </p>
+
+          <p>
+            <input
+              type="radio"
+              id="saturday"
+              name="attendance"
+              value="Saturday"
+              required
+            />
+            <label for="saturday">Saturday</label>
+          </p>
+
+          <p>
+            <input
+              type="radio"
+              id="sunday"
+              name="attendance"
+              value="Sunday"
+              required
+            />
+            <label for="sunday">Sunday</label>
+          </p>
+        </fieldset>
+
+        <p></p>
+        <label for="cheese">Choose Your Favorite Cheese:</label>
+
+        <select id="cheese" name="cheese" required>
+          <option value="">-- Select a cheese --</option>
+
+          <optgroup label="Mild cheese">
+            <option value="Mozzarella">Mozzarella</option>
+            <option value="Gouda">Gouda</option>
+            <option value="Havarti">Havarti</option>
+            <option value="Colby Jack">Colby Jack</option>
+          </optgroup>
+
+          <optgroup label="Sharp Cheese">
+            <option value="Sharp Cheddar">Sharp Cheddar</option>
+            <option value="Extra Sharp Cheddar">Extra Sharp Cheddar</option>
+            <option value="Aged Sharp Cheddar">Aged Sharp Cheddar</option>
+          </optgroup>
+
+          <optgroup label="Specialty Cheese">
+            <option value="Aged Parmesan">Aged Parmesan</option>
+            <option value="Asiago">Asiago</option>
+            <option value="Romano">Romano</option>
+            <option value="Goat Cheese">Goat Cheese</option>
+          </optgroup>
+        </select>
+
+        <p></p>
+
+        <label for="comments"> Comments or Dietary Restrictions: </label>
+        <br />
+
+        <textarea
+          id="comments"
+          name="comments"
+          rows="5"
+          cols="40"
+          placeholder="Enter any comments or dietary restrictions here..."
+        >
+        </textarea>
+
+        <p></p>
+
+        <button type="submit">Register Now</button>
+
+        <button type="reset">Clear Form</button>
+      </form>
+    </main>
+
+    <footer id="contact">
+      <h4>Contact Us</h4>
+
+      <p>Email: info@wisconsincheesefestival.com</p>
+
+      <p>&copy; 2026 Wisconsin Cheese Festival. All right reserved.</p>
+    </footer>
+  </body>
+</html>
